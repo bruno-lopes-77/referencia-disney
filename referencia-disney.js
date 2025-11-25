@@ -205,13 +205,13 @@ String.prototype.ordem = function () {
 String.prototype.língua = function () {
 	let res = "";
 	switch (this.toString()) {
-		case "EN":
+		case "en":
 			res = "Inglês";
 			break;
-		case "IT":
+		case "it":
 			res = "Italiano";
 			break;
-		case "PT":
+		case "pt":
 			res = "Português";
 			break;
 		default:
