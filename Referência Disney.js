@@ -305,7 +305,7 @@ Array.prototype.formatarNomeHtml = function (tab) {
 };
 
 async function processarDados() {
-	const respostaFicheiro = await fetch('http://localhost:8080/Referência Disney.xlsx');
+	const respostaFicheiro = await fetch('Referência Disney.xlsx');
 	const dadosFicheiro = await respostaFicheiro.blob();
 	const leitor = new FileReader();
 	leitor.onload = function (e) {
@@ -507,4 +507,5 @@ function comparadorLinhas(a, b) {
 
 function comparadorNomes(a, b) {
 	return a[0].prepararNomeOrdenação().localeCompare(b[0].prepararNomeOrdenação(), "pt-PT", {sensitivity: "base"});
+
 }
