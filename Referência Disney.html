@@ -1,0 +1,208 @@
+﻿<!doctype html>
+<html lang=pt>
+	<head>
+		<title>Referência de personagens Disney e conceitos associados</title>
+		<link rel=stylesheet href="Referência Disney.css">
+		<script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+		<script src="Referência Disney.js"></script>
+	</head>
+	<body onload="processarDados();">
+		<h1>Referência de personagens Disney e conceitos associados</h1>
+		<h2>Personagens</h2>
+		<table id=personagens>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th>Nome na língua original</th>
+					<th>Outros nomes na língua original</th>
+					<th>Língua original</th>
+					<th>Estreia</th>
+					<th>Origem</th>
+					<th>Universo</th>
+					<th>Lugares</th>
+					<th>Género</th>
+					<th>Espécie</th>
+					<th>Amores e desamores</th>
+					<th>Alter&dash;egos</th>
+					<th>Identidades secretas</th>
+					<th>Personagens de estimação</th>
+					<th>Objetos, empresas e marcas</th>
+					<th>Carro</th>
+					<th>Grupos e organizações</th>
+					<th>Membros</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Espécies</h2>
+		<table id=espécies>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th>Nome em inglês ou na língua original</th>
+					<th>Outros nomes em inglês ou na língua original</th>
+					<th>Inglês ou língua original</th>
+					<th><!--Estreia--></th>
+					<th><!--Origem--></th>
+					<th><!--Universo--></th>
+					<th><!--Lugares--></th>
+					<th><!--Género--></th>
+					<th>Membros</th>
+					<th><!--Amores e desamores--></th>
+					<th><!--Alter&dash;egos--></th>
+					<th><!--Identidades secretas--></th>
+					<th><!--Personagens de estimação--></th>
+					<th><!--Objetos, empresas e marcas--></th>
+					<th><!--Carros--></th>
+					<th>Tipo</th>
+					<th>Tipos</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Objetos, empresas e marcas</h2>
+		<table id=objetos>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th>Nome na língua original</th>
+					<th>Outros nomes na língua original</th>
+					<th>Língua original</th>
+					<th>Estreia</th>
+					<th>Origem</th>
+					<th>Universo</th>
+					<th>Lugares</th>
+					<th><!--Género--></th>
+					<th><!--Espécie--></th>
+					<th><!--Amores e desamores--></th>
+					<th><!--Alter&dash;egos--></th>
+					<th><!--Identidades secretas--></th>
+					<th><!--Personagens de estimação--></th>
+					<th>Possuidores</th>
+					<th><!--Carro--></th>
+					<th><!--Hierarquia superior--></th>
+					<th><!--Hierarquia inferior--></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Carros</h2>
+		<table id=carros>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Matrícula</th>
+					<th>Outras matrículas</th>
+					<th>Matrícula na língua original</th>
+					<th>Outras matrículas na língua original</th>
+					<th>Língua original</th>
+					<th>Estreia</th>
+					<th>Origem</th>
+					<th>Universo</th>
+					<th>Lugares</th>
+					<th><!--Género--></th>
+					<th><!--Espécie--></th>
+					<th><!--Amores e desamores--></th>
+					<th><!--Alter&dash;egos--></th>
+					<th>Identidades secretas</th>
+					<th><!--Personagens de estimação--></th>
+					<th><!--Objetos, empresas e marcas--></th>
+					<th>Donos</th>
+					<th><!--Hierarquia superior--></th>
+					<th><!--Hierarquia inferior--></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Lugares</h2>
+		<table id=lugares>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th>Nome na língua original</th>
+					<th>Outros nomes na língua original</th>
+					<th>Língua original</th>
+					<th>Estreia</th>
+					<th>Origem</th>
+					<th>Universo</th>
+					<th>Personagens</th>
+					<th><!--Género--></th>
+					<th><!--Espécie--></th>
+					<th><!--Amores e desamores--></th>
+					<th><!--Alter&dash;egos--></th>
+					<th><!--Identidades secretas--></th>
+					<th><!--Personagens de estimação--></th>
+					<th>Objetos, empresas e marcas</th>
+					<th>Carros</th>
+					<th>Localização</th>
+					<th>Locais</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Universos</h2>
+		<table id=universos>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th>Nome na língua original</th>
+					<th>Outros nomes na língua original</th>
+					<th>Língua original</th>
+					<th>Estreia</th>
+					<th>Origem</th>
+					<th>Habitantes</th>
+					<th>Lugares</th>
+					<th><!--Género--></th>
+					<th><!--Espécie--></th>
+					<th><!--Amores e desamores--></th>
+					<th>Universos alternativos</th>
+					<th><!--Identidades secretas--></th>
+					<th><!--Personagens de estimação--></th>
+					<th>Objetos, empresas e marcas</th>
+					<th>Carros</th>
+					<th><!--Hierarquia superior--></th>
+					<th><!--Hierarquia inferior--></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<h2>Origens</h2>
+		<table id=origens>
+			<thead>
+				<tr>
+					<th>N.º</th>
+					<th>Nome</th>
+					<th>Outros nomes</th>
+					<th><!--Nome na língua original--></th>
+					<th><!--Outros nomes na língua original--></th>
+					<th><!--Língua original--></th>
+					<th><!--Estreia--></th>
+					<th>Personagens</th>
+					<th>Universos</th>
+					<th>Lugares</th>
+					<th><!--Género--></th>
+					<th><!--Espécie--></th>
+					<th><!--Amores e desamores--></th>
+					<th><!--Alter&dash;egos--></th>
+					<th><!--Identidades secretas--></th>
+					<th><!--Personagens de estimação--></th>
+					<th>Objetos, empresas e marcas</th>
+					<th>Carros</th>
+					<th><!--Hierarquia superior--></th>
+					<th><!--Hierarquia inferior--></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</body>
+</html>
